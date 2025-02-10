@@ -13,7 +13,7 @@ root.title("PyChat")
 
 entry = tk.Entry(root, width=300)
 entry.pack(pady=10)
-def send_message(event):
+def send_message():
     if entry.get():
         messages_col.insert_one({"text": entry.get()})
         entry.delete(0, tk.END)
